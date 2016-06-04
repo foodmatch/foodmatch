@@ -3,7 +3,7 @@ class CreateRestaurantRatings < ActiveRecord::Migration
     create_table :restaurant_ratings do |t|
       t.integer :user_id
       t.integer :restaurant_id
-      t.integer :value
+      t.integer :value, default: 0
 
       t.timestamps null: false
     end
