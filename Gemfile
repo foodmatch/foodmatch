@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-<<<<<<< HEAD
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
@@ -9,6 +7,7 @@ gem 'pg'
 gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'simple_form'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -36,22 +35,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-=======
-gem 'rails', '4.2.6'
-gem 'pg'
-gem 'devise'
-gem 'simple_form'
-gem 'paperclip'
-gem 'devise-bootstrap-views'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
-
->>>>>>> b0bf4b7a62115d825aaf8c6e18e20654768dc5ef
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
