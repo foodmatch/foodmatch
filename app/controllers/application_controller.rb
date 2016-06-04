@@ -4,11 +4,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :authenticate_user!
-  before_action :user_preferences_present?, except: [:authenticate_user!]
+  before_action :check_if_user_has_preferences
 
-  def user_preferences_present?
-    if current_user.preferences.first.tags == []
-      redirect_to user_preferences_home_index_path
+  def check_if_user_has_preferences
+    if current_user.present?
+      if current_user.has_preferences? == false
+        redirect_to foods_path
+      end
     end
   end
 end
