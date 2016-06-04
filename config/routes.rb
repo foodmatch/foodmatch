@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
   devise_for :users, controllers: {registrations: 'user/registrations'}
-  resources :categories, only: [:index]
+  resources :foods, only: [:index]
   get 'welcome/index'
   root 'welcome#index'
-  get '*path' => redirect('/')
+  get '*path' => redirect('/foods')
 end
