@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
 gem 'pg'
+gem 'postgres_ext'
 gem 'devise'
 gem 'simple_form'
 gem 'paperclip'
@@ -17,7 +18,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3'
 end
 
 group :development do
