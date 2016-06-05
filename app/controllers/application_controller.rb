@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   def check_if_user_has_preferences
     if current_user.present?
       if current_user.has_preferences? == false
-        redirect_to foods_path
+        redirect_to user_preferences_home_index_path
       end
     end
   end
