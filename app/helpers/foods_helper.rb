@@ -1,9 +1,8 @@
 module FoodsHelper
   def populate_most_popular_list
-    @list = List.new
+    @list = List.find_or_initialize_by(name: "Most Popular")
     @list.foods = []
-    @list.foods = Food.find_by_sql("SELECT * FROM foods JOIN food_ratings ON food_ratings.food_id = foods.id ORDER BY food_ratings.value")
-
+    @list.foods = Food.find_by_sql("SELECT * FROM foods")
     return @list
   end
   def populate_recommended_list(user_id, list_number)

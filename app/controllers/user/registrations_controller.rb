@@ -8,7 +8,8 @@ before_action :user_params, only: [:create]
   def create
     current_user = User.new(user_params)
     if current_user.save
-      redirect_to user_preferences_home_index_path
+      byebug
+      redirect_to foods_path
     end
   end
 

@@ -6,7 +6,6 @@ gem 'postgres_ext'
 gem 'devise'
 gem 'simple_form'
 gem 'paperclip'
-gem "bootstrap-sass"
 gem 'devise-bootstrap-views'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'sass-rails', '~> 5.0'
