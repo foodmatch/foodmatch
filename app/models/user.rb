@@ -9,4 +9,8 @@ class User < ActiveRecord::Base
   has_many :carts
   has_many :transactions
   has_many :preferences
+
+  def has_preferences?
+    self.preferences.any?
+  end
 end
